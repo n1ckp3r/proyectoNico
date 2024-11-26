@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>402formulario.html</title>
+</head>
+<body>
+    <form action="402formulario.php" method="post">
+        <p>
+            <label for="nombreApellido">Nombre y Apellidos</label>
+            <input type="text" name="nomApell" id="nomApell">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="urlPers">URL página personal</label>
+            <input type="url" name="urlPers" id="urlPers">
+        </p>
+
+        <p>
+            <label for="sexo">Sexo</label>
+            <ul>
+                <li>
+                    Hombre<input type="radio" name="genero" id="hombre" value="Hombre">
+                </li>
+                <li>
+                    Mujer<input type="radio" name="genero" id="mujer" value="Mujer">
+                </li>
+            </ul>                   
+        </p>
+
+        <p>
+            <label for="numConv">Numero de convivientes en el domicilio</label>
+            <input type="number" name="numConv" id="numConv">
+        </p>
+
+        <p>
+            <label for="aficiones">Aficiones</label>
+            <ul>
+                <li>
+                    Nadar<input type="checkbox" name="aficiones[]" id="nadar" value="Nadar">
+                </li>
+                <li>
+                    Correr<input type="checkbox" name="aficiones[]" id="correr" value="Correr">
+                </li>
+                <li>
+                    Bicicleta<input type="checkbox" name="aficiones[]" id="bicicleta" value="Bicicleta">
+                </li>
+                <li>
+                    Jugar<input type="checkbox" name="aficiones[]" id="jugar" value="Jugar">
+                </li>
+            </ul>
+        </p>
+        <p>
+            <label for="menuFav">Menú Favorito</label>
+            <select name="menuFav" id="menuFav">
+                <option value="Pizza">Pizza</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Barbacoa">Barbacoa</option>
+                <option value="Huevo">Huevo</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Mostrar">
+        </p>
+    </form>
+</body>
+</html>
