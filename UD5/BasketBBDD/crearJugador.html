@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="crearJugador.php" method="POST">
+        ID: <input type="number" name="id" id="id"><br>
+        Nombre: <input type="text" name="nombre" id="nombre"><br>
+        Equipo: <input type="text" name="equipo" id="equipo"><br>
+        Posición: <select name="posicion" id="posicion">
+            <option value="Base">Base</option>
+            <option value="Escolta">Escolta</option>
+            <option value="Ala pivot">Ala pivot</option>
+            <option value="Pivot">Pivot</option>
+            <option value="Alero">Alero</option>
+        </select>
+
+        <button type="submit">Subir</button>
+
+    </form>
+</body>
+</html>
